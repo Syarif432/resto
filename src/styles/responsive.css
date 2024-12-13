@@ -1,0 +1,99 @@
+/* Mobile Style */
+@media (max-width: 767px) {
+  header {
+    padding: 2px 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hamburger-button {
+    display: block;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .drawer-nav {
+    display: block;
+    position: fixed;
+    top: 5.4vh;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .drawer-nav.open {
+    transform: translateX(0);
+  }
+
+  .drawer-nav ul {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    width: 50%;
+    height: 20vh;
+  }
+
+  .content__heading {
+    font-size: 2rem;
+  }
+
+  .restaurants {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant_image {
+    height: 150px;
+  }
+
+  .restaurant_info h3 {
+    font-size: 0.9rem;
+  }
+
+  .restaurant_location,
+  .restaurant_rating,
+  .restaurant_description {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  /* CSS untuk handphone kecil */
+  .logo {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    margin-top: 3px;
+    font-size: 0.5rem;
+    width: 50%;
+    height: 10vh;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+}
